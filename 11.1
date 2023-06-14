@@ -1,0 +1,10 @@
+export  function countDown(count) {
+  let words = '';
+  if (isNaN(count) || count < 1) {
+    return words += 'Недопустимые символы. Введите положительное число.'
+  } else {
+  for (let i = count; i > 0; i--) {
+      words += i;
+  };
+  return words;
+}};
